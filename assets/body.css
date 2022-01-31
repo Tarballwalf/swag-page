@@ -1,0 +1,42 @@
+* {
+    background: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+  
+body {
+    font: 14px 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+line {
+    display: block;
+}
+
+.block {
+    font-size: 12px;
+    text-align: left;
+    margin-left:120px auto;
+    margin-right:120px auto;
+    max-width: 680px;
+}
+
+.border {
+    width: 680px auto;
+    margin: auto;
+    border-top: dashed 0px;
+    border-bottom: dashed 1px;
+    border-color: #ffffff;
+    overflow: hidden;
+}
+
+a:hover {
+    color: #808080;
+}
+
+@media 
+/* Small Screens */
+only screen and (max-width: 500px),
+/* Medium Screens */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	footer { display: none; }
+}

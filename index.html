@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>How did you get here?</title>
+  <link rel="icon" href="/assets/logo.gif" type="image">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/assets/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/assets/body.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.26/moment-timezone-with-data-10-year-range.min.js"></script>
+  <script type="module" src="/assets/zero-md.min.js"></script>
+  <script>
+    setInterval(() => {
+      document.getElementById('time2').innerHTML = moment.tz('Europe/Bucharest').format('dddd, MMMM Do   HH:mm (hh:mm A) z')
+    }, 300)
+    </script>
+</head>
+<a class='hidden' href="/foxwedding/">foxwedding</a> 
+<body>
+  <center>
+    <!-- Border -->
+    <div class="block">
+      <hr class="border"></hr>
+    </div>
+    <!-- Border -->
+    <div class="block">
+      <p id="time2" style="float: left;">Loading Time...</p>
+      <p id="time" style="text-align: right; float: right; ">Info:</p>
+    </div>
+    <!-- Border -->
+    <div class="block" style="clear: both;">
+      <hr class="border"></hr>
+    </div>
+    <!-- Border -->
+    <div class="block">
+      <line>
+      
+        <br />
+        <zero-md src="/info.md">
+          <template>
+            <link rel="stylesheet" href="/assets/style/markdown-styles.css">
+          </template>
+        </zero-md>
+        
+        <br />
+      </line>
+    </div>
+    <!-- Border -->
+    <div class="block">
+      <hr class="border"></hr>
+    </div>
+    <!-- Border -->
+  </center>
+  </body>
+</html>
